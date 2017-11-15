@@ -33,3 +33,4 @@ vim/test2: test/test_token.vim
 	vim -u NONE -N --cmd "let &rtp .= ',' . getcwd()" -S test/test_token.vim
 	diff -u test/test_token.want test/test_token.got
 
+.PHONY: all clean_compiled check test js/test py/test
